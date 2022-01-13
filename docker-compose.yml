@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+    - "3001:3001"
+    - "3000:3000"
+  #   links:
+  #   - chrome
+  # chrome:
+  #   image: browserless/chrome:latest
+  #   ports:
+  #   - "3000:3000"
+# volumes:
+#   logvolume01: {}
